@@ -2,10 +2,8 @@
 Custom STM32F4-based 4-layers PCB featuring MPU-6050 IMU, USB power, LDO regulation, and SWD debugging
 
 
-<img width="814" height="739" alt="image" src="https://github.com/user-attachments/assets/eeba9411-a6dc-45e7-9155-3f462793b3ec" />
+<img width="815" height="723" alt="image" src="https://github.com/user-attachments/assets/5c29c7ce-b4d2-4386-a68c-29f4505cbfa1" />
 
-
-<img width="787" height="709" alt="image" src="https://github.com/user-attachments/assets/76fe54c7-adae-4598-83a7-e8a2185e91c0" />
 
 
 
@@ -30,3 +28,7 @@ It includes:
 * Programming: Tag-Connect TC2030 (Plug-of-Nails™) SWD debugging interface.
 
 * Configuration: BOOT0 hardwired to GND for normal flash boot.
+
+
+
+  
