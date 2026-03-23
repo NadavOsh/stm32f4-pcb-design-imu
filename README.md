@@ -7,7 +7,18 @@ This board is a custom embedded system built around the STM32F4 microcontroller,
 
 It includes:
 
-* USB-powered operation
-* Onboard 3.3V regulation
-* I2C-based inertial sensing
-* SWD debugging interface
+
+
+* MCU: STM32F4 series (High-performance ARM Cortex-M4).
+
+* Sensors: IMU MPU-6050 6-Axis Gyroscope & Accelerometer. Connected via I2C.
+
+* Micro USB (Molex 473460001).
+ 
+* Onboard AMS1117-3.3 LDO (5V to 3.3V regulation).
+
+* JST-GH 6-pin (SM06B-GHS-TB) for external peripherals.
+
+* Programming: Tag-Connect TC2030 (Plug-of-Nails™) SWD debugging interface.
+
+* Configuration: BOOT0 hardwired to GND for normal flash boot.
