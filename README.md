@@ -31,4 +31,67 @@ It includes:
 
 
 
+# 2. Hardware Architecture
+
+Core Components:
+
+MCU: STM32F4 series
+* IMU: MPU-6050 (accelerometer + gyroscope)
+
+*Voltage Regulator: AMS1117-3.3 (5V → 3.3V)
+
+*Clock Source: External 24 MHz oscillator
+
+
+Power System:
+* Input: 5V via USB connector (473460001)
+* Regulation: AMS1117-3.3 LDO
+* Output: 3.3V rail powering MCU and peripherals
+
+
+Interfaces:
+* USB
+* SWD Debugging:
+  * Connector: TC2030 Tag-Connect
+  * Signals:
+     * SWDIO
+     * SWCLK
+     * GND
+    * 3.3V (reference)
+
+
+IMU Interface (MPU-6050):
+* Communication: I2C
+* Pull-up resistors: Present on SDA and SCL lines
+* Powered from 3.3V rail
+
+
+Expansion Connector:
+* JST 6-pin connector (SM06B-GHS-TB)
+* Can be used for:
+    * External sensors
+    * UART / I2C / GPIO expansion
+
+
+# 3. Boot Configuration:
+
+* BOOT0 is tied to GND
+   * MCU always boots from internal Flash
+   * Prevents accidental boot into system bootloader
+
+
+# 4. Clock Configuration:
+
+* External 24 MHz oscillator connected to MCU
+
+
+# 5. Pin Mapping
+
+Interface,Connection,Description
+I2C,STM32 <-> MPU-6050,Sensor data (with pull-ups)
+SWD,TC2030 Connector,Debugging & Programming
+USB,473460001,5V Power & USB Data
+JST,SM06B-GHS-TB,6-pin GPIO/Serial Expansion
+
+
   
