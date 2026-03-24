@@ -7,6 +7,10 @@ Custom STM32F4-based 4-layers PCB featuring MPU-6050 IMU, USB power, LDO regulat
 
 
 
+<img width="1191" height="849" alt="image" src="https://github.com/user-attachments/assets/2bf20c31-6fbb-4516-8117-5fd409733d84" />
+
+
+
 # 1. Overview
 
 This board is a custom embedded system built around the STM32F4 microcontroller, designed for motion sensing applications using an onboard IMU.
