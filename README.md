@@ -91,16 +91,16 @@ Expansion Connector:
 
 | Function        | MCU Pin | Direction | Description                        |
 |----------------|--------|-----------|--------------------------------------|
-| I2C_SCL        | PB6    | Output    | I2C clock to MPU-6050 (pull-up)      |
+| I2C_SCL        | PB6    | Bidir     | I2C clock to MPU-6050 (pull-up)      |
 | I2C_SDA        | PB7    | Bidir     | I2C data to MPU-6050 (pull-up)       |
-| USB_VBUS       | TBD    | Input     | 5V input from USB connector          |
+| USB_VBUS       | -      | Input     | 5V input from USB connector          |
 | USB_DN         | PA11   | Bidir     | USB differential data (-)            |
 | USB_DP         | PA12   | Bidir     | USB differential data (+)            |
-| SWDIO          | PA12   | Bidir     | SWD debug data                       |
-| SWCLK          | PA13   | Bidir     | SWD debug clock                      |
+| SWDIO          | PA13   | Bidir     | SWD debug data                       |
+| SWCLK          | PA14   | Bidir     | SWD debug clock                      |
 | SW0            | PB3    | Bidir     | Serial Wire Output. Debug            |
-| LED            | PB13   | Output    | Red LED      |
-| NRST           | NRST   | Input     | MCU negative reset. goes to GND      |
+| LED            | PB13   | Output    | Red LED                              |
+| NRST           | NRST   | Input     | MCU negative reset                   |
 | BOOT0          | BOOT0  | Input     | Boot configuration (Flash mode)      |
 | HSE_IN         | PH0    | Input     | External 24 MHz oscillator input     |
 | HSE_OUT        | PH1    | Output    | External oscillator output           |
