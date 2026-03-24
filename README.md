@@ -117,4 +117,27 @@ Expansion Connector:
 | JST_PIN_5      | PA7    | I/O       | Expansion connector                  |
 | JST_PIN_6      | -      | GND       | GND                                  |
 
+
+# 6. Design Notes / Decisions
+
+* Used I2C with pull-ups for reliable communication with IMU
+* BOOT0 tied low for stable boot behavior
+* Tag-Connect reduces connector footprint vs standard headers
+
+
+# 7. Limitations / Future Improvements
+
+* AMS1117 has high dropout and poor efficiency → consider switching regulator
+* No ESD protection on USB
+
+
+# 8. Files Included
+* Schematic (PDF)
+* PCB layout
+* BOM
+* Gerber Files
+* Pick and Place
+
+
+
   
