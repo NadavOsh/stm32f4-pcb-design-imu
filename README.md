@@ -87,11 +87,30 @@ Expansion Connector:
 
 # 5. Pin Mapping
 
-Interface,Connection,Description
-I2C,STM32 <-> MPU-6050,Sensor data (with pull-ups)
-SWD,TC2030 Connector,Debugging & Programming
-USB,473460001,5V Power & USB Data
-JST,SM06B-GHS-TB,6-pin GPIO/Serial Expansion
+## Pin Mapping
 
+| Function        | MCU Pin | Direction | Description                        |
+|----------------|--------|-----------|--------------------------------------|
+| I2C_SCL        | PB6    | Output    | I2C clock to MPU-6050 (pull-up)      |
+| I2C_SDA        | PB7    | Bidir     | I2C data to MPU-6050 (pull-up)       |
+| USB_VBUS       | TBD    | Input     | 5V input from USB connector          |
+| USB_DN         | PA11   | Bidir     | USB differential data (-)            |
+| USB_DP         | PA12   | Bidir     | USB differential data (+)            |
+| SWDIO          | PA12   | Bidir     | SWD debug data                       |
+| SWCLK          | PA13   | Bidir     | SWD debug clock                      |
+| SW0            | PB3    | Bidir     | Serial Wire Output. Debug            |
+| LED            | PB13   | Output    | Red LED      |
+| NRST           | NRST   | Input     | MCU negative reset. goes to GND      |
+| BOOT0          | BOOT0  | Input     | Boot configuration (Flash mode)      |
+| HSE_IN         | PH0    | Input     | External 24 MHz oscillator input     |
+| HSE_OUT        | PH1    | Output    | External oscillator output           |
+| 3V3            | —      | Power     | Regulated 3.3V rail                  |
+| GND            | —      | Ground    | Ground                               |
+| JST_PIN_1      | -      | Power     | 3.3V                                 |
+| JST_PIN_2      | PA4    | I/O       | Expansion connector                  |
+| JST_PIN_3      | PA5    | I/O       | Expansion connector                  |
+| JST_PIN_4      | PA6    | I/O       | Expansion connector                  |
+| JST_PIN_5      | PA7    | I/O       | Expansion connector                  |
+| JST_PIN_6      | -      | GND       | GND                                  |
 
   
